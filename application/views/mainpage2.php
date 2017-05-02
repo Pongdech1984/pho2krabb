@@ -50,7 +50,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#">เข้าสู่ระบบ</a>
+                        <button class="btn navbar-btn btn-sm btn-primary " data-toggle="modal" data-target="#basicModal">เข้าสู่ระบบ</button>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">ประเภทของช่างภาพ</a>
@@ -75,7 +75,7 @@
                 <h1 id="homeHeading">เว็บไซด์รวบรวมช่างภาพมืออาชีพ</h1>
                 <hr>
                 <p>หากคุณกำลังมองหาช่างภาพมืออาชีพ สำหรับงานแต่ง พรีเวดดิ้ง งานรับปริญญา งานอีเว้นท์ต่างๆ เรามีช่างภาพมืออาชีพพร้อมรับงานถ่ายภาพของคุณเพื่อเก็บความทรงจำไว้</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">ทำไมคุณควรหาช่างภาพมืออาชีพมาถ่ายภาพให้คุณ?</a>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">ทำไมคุณควรหาช่างภาพมืออาชีพมาถ่ายภาพ</a>
             </div>
         </div>
     </header>
@@ -84,7 +84,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">ทำไมคุณควรหาช่างภาพมืออาชีพมาถ่ายภาพให้คุณ!</h2>
+                    <h2 class="section-heading">ทำไมคุณควรหาช่างภาพมืออาชีพมาถ่ายภาพ</h2>
                     <hr class="light">
                     <p class="text-faded">เพราะช่างภาพมืออาชีพจะมีเทคการถ่ายภาพให้สวยงามและเข้าใจงานถ่ายภาพในแต่ละประเภทเป็นอย่างดี รวมถึงอุปกรณ์การถ่ายภาพที่ครบครันพร้อมรับมือกับการถ่ายภาพทุกสถานการณ์</p>
                     <a href="#" class="page-scroll btn btn-default btn-xl sr-button">ค้นหาช่างภาพ!</a>
@@ -257,6 +257,38 @@
             </div>
         </div>
     </section>
+    <div class="modal fade" id="basicModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h2>เข้าสู่ระบบ</h2>
+            </div>
+            <div class="modal-body">
+              <form role="form" action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Usernmae</label>
+                    <input type="text" class="form-control" id="username"
+                    placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control"
+                    id="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary"> Login </button>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <a href="#">ลงทะเบียนช่างภาพกับเรา</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
