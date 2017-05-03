@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>PHO2KLUB - ค้นหาช่างภาพ ถ่ายรูปพรีเว็ดดิ้ง งานแต่ง รับปริญญา งานอีเว้นท์ต่างๆ</title>
+    <title>PHOTOKRUB - ค้นหาช่างภาพ ถ่ายรูปพรีเว็ดดิ้ง งานแต่ง รับปริญญา งานอีเว้นท์ต่างๆ</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">PHO2KLUB</a>
+                <a class="navbar-brand page-scroll" href="#page-top">PHOTOKRUB</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -71,7 +71,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Pho2club</h1>
+                <h1 id="homeHeading">PHOTOKRUB</h1>
                 <h1 id="homeHeading">เว็บไซด์รวบรวมช่างภาพมืออาชีพ</h1>
                 <hr>
                 <p>หากคุณกำลังมองหาช่างภาพมืออาชีพ สำหรับงานแต่ง พรีเวดดิ้ง งานรับปริญญา งานอีเว้นท์ต่างๆ เรามีช่างภาพมืออาชีพพร้อมรับงานถ่ายภาพของคุณเพื่อเก็บความทรงจำดีๆไว้เป็นภาพถ่าย</p>
@@ -257,6 +257,7 @@
             </div>
         </div>
     </section>
+
     <div class="modal fade" id="basicModal">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -283,12 +284,42 @@
             </form>
             </div>
             <div class="modal-footer">
-              <a href="#" class="btn btn-primary">ลงทะเบียนช่างภาพกับเรา</a>
+              <button class="btn navbar-btn btn-sm btn-primary" data-toggle="modal" data-target="#regis">ลงทะเบียนช่างภาพกับเรา</button>
             </div>
         </div>
     </div>
     </div>
 
+    <div class="modal fade" id="regis">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h2>ลงทะเบียนสมาชิกใหม่</h2>
+            </div>
+            <div class="modal-body">
+              <form role="form" action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Usernmae</label>
+                    <input type="text" class="form-control" id="username"
+                    placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control"
+                    id="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary"> ลงทะเบียน </button> | <span class="sr-only">ยกเลิก</span>
+            </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+    </div>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -305,5 +336,7 @@
     <script src="js/creative.min.js"></script>
 
 </body>
-
+<div class="modal-footer">
+  <p class="text-center">© 2017 Photokrub. All rights reserved.</p>
+</div>
 </html>

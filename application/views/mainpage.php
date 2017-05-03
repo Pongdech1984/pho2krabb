@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>PHO2KLUB - ค้นหาช่างภาพ ถ่ายรูปพรีเว็ดดิ้ง งานแต่ง รับปริญญา งานอีเว้นท์ต่างๆ</title>
+    <title>PHOTOKRUB - ค้นหาช่างภาพ ถ่ายรูปพรีเว็ดดิ้ง งานแต่ง รับปริญญา งานอีเว้นท์ต่างๆ</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">PHO2KLUB</a>
+                <a class="navbar-brand page-scroll" href="#page-top">PHOTOKRUB</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -71,7 +71,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Pho2club</h1>
+                <h1 id="homeHeading">PHOTOKRUB</h1>
                 <h1 id="homeHeading">เว็บไซด์รวบรวมช่างภาพมืออาชีพ</h1>
                 <hr>
                 <p>หากคุณกำลังมองหาช่างภาพมืออาชีพ สำหรับงานแต่ง พรีเวดดิ้ง งานรับปริญญา งานอีเว้นท์ต่างๆ เรามีช่างภาพมืออาชีพพร้อมรับงานถ่ายภาพของคุณเพื่อเก็บความทรงจำดีๆไว้เป็นภาพถ่าย</p>
@@ -305,5 +305,7 @@
     <script src="js/creative.min.js"></script>
 
 </body>
-
+<div class="modal-footer">
+  <p class="text-center">© 2017 Photokrub. All rights reserved.</p>
+</div>
 </html>

@@ -22,4 +22,8 @@ class User extends CI_Controller {
 	{
 		$this->load->view('mainpage');
 	}
+	public function regiser_pg()
+	{
+		$this->load->view('regiserpg');
+	}
 }
