@@ -50,9 +50,6 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#"><img src="img/header.jpg" width="25" height="25" class="img-circle">  พงษ์เดช</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#services">ประเภทของช่างภาพ</a>
                     </li>
                     <li>
@@ -60,6 +57,23 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">บทความ</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                          <?php if($userpic=='') { ?>
+                          <img src="img/find_user.png" width="25" height="25" class="img-circle">
+                          <?php }else{ ?>
+                          <img src="img/<?php echo $userpic;?>" width="25" height="25" class="img-circle">
+                          <?php } ?>
+                          <?php echo $username;?>
+                        <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="<?php echo site_url("user/user_profile"); ?>"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="<?php echo site_url("login/logout"); ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>

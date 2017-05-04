@@ -50,9 +50,6 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <button class="btn navbar-btn btn-sm btn-primary " data-toggle="modal" data-target="#basicModal">เข้าสู่ระบบ | สมัครสมาชิก</button>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#services">ประเภทของช่างภาพ</a>
                     </li>
                     <li>
@@ -60,6 +57,17 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">บทความ</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="img/header.jpg" width="25" height="25" class="img-circle">  <?php echo $username;?>
+                        <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="<?php echo site_url("user/user_profile"); ?>"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="<?php echo site_url("login/logout"); ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -257,7 +265,6 @@
             </div>
         </div>
     </section>
-
     <div class="modal fade" id="basicModal">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -267,38 +274,6 @@
                     <span class="sr-only">Close</span>
                 </button>
                 <h2>เข้าสู่ระบบ</h2>
-            </div>
-            <div class="modal-body">
-              <form role="form" action="<?php echo site_url("login/verify_login"); ?>" method="post">
-                <div class="form-group">
-                    <label for="username">Usernmae</label>
-                    <input type="text" class="form-control" id="username" name="username"
-                    placeholder="Enter username" required title="Enter username">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" name="password"
-                    id="password" placeholder="Password" required title="Enter Password">
-                </div>
-                <button type="submit" class="btn btn-primary"> Login </button> | <a href="#">ลืมรหัสผ่าน</a>
-            </form>
-            </div>
-            <div class="modal-footer">
-              <button class="btn navbar-btn btn-sm btn-primary" data-toggle="modal" data-target="#regis">ลงทะเบียนช่างภาพกับเรา</button>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="modal fade" id="regis">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h2>ลงทะเบียนสมาชิกใหม่</h2>
             </div>
             <div class="modal-body">
               <form role="form" action="#" method="post">
@@ -312,14 +287,16 @@
                     <input type="password" class="form-control"
                     id="password" placeholder="Password">
                 </div>
-                <button type="submit" class="btn btn-primary"> ลงทะเบียน </button> | <span class="sr-only">ยกเลิก</span>
+                <button type="submit" class="btn btn-primary"> Login </button> | <a href="#">ลืมรหัสผ่าน</a>
             </form>
             </div>
             <div class="modal-footer">
+              <a href="#" class="btn btn-primary">ลงทะเบียนช่างภาพกับเรา</a>
             </div>
         </div>
     </div>
     </div>
+
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
