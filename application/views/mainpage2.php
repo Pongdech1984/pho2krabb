@@ -284,7 +284,7 @@
             </form>
             </div>
             <div class="modal-footer">
-              <button class="btn navbar-btn btn-sm btn-primary" data-toggle="modal" data-target="#regis">ลงทะเบียนช่างภาพกับเรา</button>
+              <a href="register" target="_blank" class="btn navbar-btn btn-sm btn-primary" >ลงทะเบียนช่างภาพกับเรา</a>
             </div>
         </div>
     </div>
@@ -304,15 +304,13 @@
               <form role="form" action="#" method="post">
                 <div class="form-group">
                     <label for="username">Usernmae</label>
-                    <input type="text" class="form-control" id="username"
-                    placeholder="Enter username">
+                    <input type="text" class="form-control" id="username" placeholder="Enter username">
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control"
-                    id="password" placeholder="Password">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
                 </div>
-                <button type="submit" class="btn btn-primary"> ลงทะเบียน </button> | <span class="sr-only">ยกเลิก</span>
+                <button type="submit" class="btn btn-primary"> ลงทะเบียน </button>
             </form>
             </div>
             <div class="modal-footer">
