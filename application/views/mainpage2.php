@@ -12,18 +12,18 @@
     <title>PHOTOKRUB - ค้นหาช่างภาพ ถ่ายรูปพรีเว็ดดิ้ง งานแต่ง รับปริญญา งานอีเว้นท์ต่างๆ</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url('vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url('vendor/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="<?php echo base_url('vendor/magnific-popup/magnific-popup.css')?>" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="<?php echo base_url('css/creative.min.css')?>" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,7 +50,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <button class="btn navbar-btn btn-sm btn-primary " data-toggle="modal" data-target="#basicModal">เข้าสู่ระบบ | สมัครสมาชิก</button>
+                        <button class="btn navbar-btn btn-sm btn-primary " data-toggle="modal" data-target="#basicModal">เข้าสู่ระบบ | สมัครเป็นช่างภาพกับเรา</button>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">ประเภทของช่างภาพ</a>
@@ -266,7 +266,7 @@
                     <span aria-hidden="true">&times;</span>
                     <span class="sr-only">Close</span>
                 </button>
-                <h2>เข้าสู่ระบบ</h2>
+                <h2>เข้าสู่ระบบสำหรับช่างภาพ</h2>
             </div>
             <div class="modal-body">
               <form role="form" action="<?php echo site_url("login/verify_login"); ?>" method="post">
@@ -284,56 +284,25 @@
             </form>
             </div>
             <div class="modal-footer">
-              <button class="btn navbar-btn btn-sm btn-primary" data-toggle="modal" data-target="#regis">ลงทะเบียนช่างภาพกับเรา</button>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="modal fade" id="regis">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h2>ลงทะเบียนสมาชิกใหม่</h2>
-            </div>
-            <div class="modal-body">
-              <form role="form" action="#" method="post">
-                <div class="form-group">
-                    <label for="username">Usernmae</label>
-                    <input type="text" class="form-control" id="username"
-                    placeholder="Enter username">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control"
-                    id="password" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-primary"> ลงทะเบียน </button> | <span class="sr-only">ยกเลิก</span>
-            </form>
-            </div>
-            <div class="modal-footer">
+              <a href="<?php echo site_url("home/register"); ?>" class="btn btn-primary">สมัครเป็นช่างภาพกับเรา</a>
             </div>
         </div>
     </div>
     </div>
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url('vendor/jquery/jquery.min.js')?>"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url('vendor/bootstrap/js/bootstrap.min.js')?>"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo base_url('vendor/scrollreveal/scrollreveal.min.js')?>"></script>
+    <script src="<?php echo base_url('vendor/magnific-popup/jquery.magnific-popup.min.js')?>"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
+    <script src="<?php echo base_url('js/creative.min.js')?>"></script>
 
 </body>
 <div class="modal-footer">
